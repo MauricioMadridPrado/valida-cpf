@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limpar CPF</title>
+  </head>
+  <body>
+    <style>
+      label {
+        display: block;
+        font-family: "IBM Plex Mono";
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        border: 2px solid black;
+        font-size: 1em;
+        box-sizing: border-box;
+      }
+      input::placeholder {
+        color: rgba(0, 0, 0, 0.2);
+      }
+      li {
+        padding: 5px;
+        font-family: "IBM Plex Mono";
+      }
+      li:nth-of-type(odd) {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .erro {
+        border: 2px red solid;
+      }
+      .valido {
+        border: 2px green solid;
+      }
+      .erro-text{
+        display: none;
+        font-family: "IBM Plex Mono";
+        font-size: 0.875rem;
+        color: red;
+      }
+      
+      .erro-text.ativo{
+        display: block;
+      }
+    </style>
+    <!-- <h1>Clientes CPF</h1>
+    <ul class="cpf">
+      <li>111.111.111-11</li>
+      <li>222222222-22</li>
+      <li>333-333-333-33</li>
+      <li>44444444444</li>
+      <li>555 555 555 55</li>
+      <li>666666.666-66</li>
+      <li>777.777.777.77</li>
+    </ul> -->
+    <form action="">
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" placeholder="•••.•••.•••-••" />
+      <label for="cpf">Email</label>
+      <input type="text" name="email" id="email" />
+    </form>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
